@@ -1,13 +1,8 @@
-# Primer Design Program
-
-Designing new primers for metabarcoding is one of the primary challenges in genomics.
-This project seeks to help automate and simplify that process, by taking a limited 
-number of inputs from the user (e.g. target group, gene, purpose of primer - like 
-eDNA metabarcoding, just amplifying a certain gene, etc.) and churning out primers, with
-information included about those primers and how they can be used.
+# Finding identical barcodes
 
 The metabarcode amplified by the MiSebastes primers is unique for almost 2/3 of the genus 
 Sebastes. However, for the remaining 1/3 of the genus, multiple species share the same barcode. This program, which can also be used on other datasets containing multiple sequences for the same barcodes, determines which species share the same barcode. It formats this output as a table detailing which species have an identical barcode, and then uses another script to append a new column to a taxonomy output file generated using the Anacapa pipeline. This new column will tell you which species your barcode matches to, and thus tells you which species you my have found in your eDNA sample.
+
 ## Getting Started
 
 This program has two parts:
