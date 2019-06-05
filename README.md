@@ -1,37 +1,37 @@
-# Finding identical barcodes
+# MiSebastes Annotator
 
-The metabarcode amplified by the MiSebastes primers is unique for almost 2/3 of the genus 
-Sebastes. However, for the remaining 1/3 of the genus, multiple species share the same barcode. This program, which can also be used on other datasets containing multiple sequences for the same barcodes, determines which species share the same barcode. It formats this output as a table detailing which species have an identical barcode, and then uses another script to append a new column to a taxonomy output file generated using the Anacapa pipeline. This new column will tell you which species your barcode matches to, and thus tells you which species you my have found in your eDNA sample.
+#### Last updated June 4th, 2019
+* Written by Markus Min* (markus.min@gmail.com)
+
+## Introduction
+Environmental DNA metabarcoding is a new method for sampling the biodiversity of marine ecosystems through the sequencing of DNA extracted from water samples. It relies on the identification of suitable metabarcodes, highly variable regions of the genome capable of distinguishing individual species that are flanked on either side by highly conserved regions that allow for primer annealing to a wide variety of taxa. The MiSebastes primer set is a new set of primers developed specifically for rockfishes, genus *Sebastes*. This group of commercially and ecologically important fishes radiated very recently (many within the last million years), leading to a high degree of interspecific genetic similarity between different species in this genus. As universal teleost primers lack the resolution to distinguish between different *Sebastes* spp., MiSebastes was developed to develop a new metabarcode for these fishes. However, because of the extreme genetic similarity between *Sebastes* spp., this metabarcode is still identical for some species. This program first determines which species share the same barcode and then appends a new column to a taxonomy output file generated using the Anacapa pipeline. This new column will tell you the different species your barcode matches to, and thus tells you which species you my have found in your eDNA sample.
 
 ## Getting Started
 
-This program has two parts:
-1) Creating the table of barcodes with different species that share a barcode
-2) Using the table to append a new column to an Anacapa taxonomy file idnetifying which species the barcode may belong to.
-
-Here is how to run each of the parts:
-
-1) identical-barcodes.py input_fasta_file output_file_name
-2) append_taxonomy.py input_anacapa_file output_anacapa_file
+This program essentially has two parts: 
+(1) Taking your raw fasta file and trimming it down so that each DNA sequence is only listed once, with all species that share the barcode assigned to the sequence barcodes with different species that share a barcode. This fasta file is one of the outputs.
+(2) Using the fasta file to append a new column to an Anacapa taxonomy file, identifying all species that share the particular barcode.
 
 ### Example usage
 
-1) identical-barcodes.py NOAA_barcodes.fasta barcodes_table.csv
-2) append_taxonomy.py Min_Sebastes_ASV_taxonomy Min_Sebastes_ASV_taxonomy_appended
+python3 misebastes_annotator.py ecoPCR_RF_barcodes.fasta Min_sebastes_ASV_sum_by_taxonomy_40.txt
+
+In this example usage, the fasta file that contains your barcodes is ecoPCR_RF_barcodes.fasta and the anacapa taxonomy file that you wish to annotate is Min_sebastes_ASV_sum_by_taxonomy_40.txt. This will produce two output files:
+1) The trimmed fasta file, called trimmed_ecoPCR_RF_barcodes.fasta
+2) The annotated Anacapa taxonomy file, called Min_sebastes_ASV_sum_by_taxonomy_40_annotated.txt
+
+Prior to running this program, you must have the misebastes_annotator.py, your fasta file, and your Anacapa file all in the same directory.
 
 ### Prerequisites
 
 This program requires Biopython and Anacapa.
+Biopython can be found here: https://biopython.org/
+Anacapa can be found here: https://github.com/limey-bean/Anacapa
 
 ## Authors
 
 * **Markus Min** - *Initial work* - [markusmin](https://github.com/markusmin)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
 
 * Thank you very much to Emily Curd and Daniel Chavez for helping with the design of this program.
-
