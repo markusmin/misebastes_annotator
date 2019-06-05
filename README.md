@@ -1,7 +1,7 @@
 # MiSebastes Annotator
 
 #### Last updated June 4th, 2019
-* Written by Markus Min* (markus.min@gmail.com)
+* Written by *Markus Min* (markus.min@gmail.com)
 
 ## Introduction
 Environmental DNA metabarcoding is a new method for sampling the biodiversity of marine ecosystems through the sequencing of DNA extracted from water samples. It relies on the identification of suitable metabarcodes, highly variable regions of the genome capable of distinguishing individual species that are flanked on either side by highly conserved regions that allow for primer annealing to a wide variety of taxa. The MiSebastes primer set is a new set of primers developed specifically for rockfishes, genus *Sebastes*. This group of commercially and ecologically important fishes radiated very recently (many within the last million years), leading to a high degree of interspecific genetic similarity between different species in this genus. As universal teleost primers lack the resolution to distinguish between different *Sebastes* spp., MiSebastes was developed to develop a new metabarcode for these fishes. However, because of the extreme genetic similarity between *Sebastes* spp., this metabarcode is still identical for some species. This program first determines which species share the same barcode and then appends a new column to a taxonomy output file generated using the Anacapa pipeline. This new column will tell you the different species your barcode matches to, and thus tells you which species you my have found in your eDNA sample.
