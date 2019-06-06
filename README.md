@@ -45,7 +45,11 @@ Your output file will be the annotated Anacapa ASV file, Min_sebastes_ASV_sum_by
 ### Prerequisites
 
 This program requires **Biopython** and **Anacapa**.
+
 **Biopython** can be found here: https://biopython.org/
+Installation instructions can be found at this link:
+https://biopython.org/wiki/Download
+
 **Anacapa** can be found here: https://github.com/limey-bean/Anacapa
 
 ## Authors
