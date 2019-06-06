@@ -20,7 +20,7 @@ Maybe you could have some bolded headers like "if you want to run the full progr
 #### 6. Is there a section that indicates the files and directories produced by the program?
 Yes! well its not a section of its own, but they are listed at the end of example usage. 
 
-#### 7. Are the research programs / motivations for the program cited?  Are the dependencies cited?
+#### 7. Are the research programs / motivations for the program cited?  Are the dependencies cited?   
 No, citations are needed. 
 ---
 
@@ -39,9 +39,9 @@ N/a ?? I think Emily said we didnt need them, idk..
 No, but theres a Vignette readme. 
 
 #### 11. Where you able to run the Vignette using the small test dataset? If not what errors did you get?  If so was it easy to run the dataset?  Where the instructions clear.
-No
+N/a
 
-#### 12. Where you able to reproduce the expected output?  If not what was different.
+#### 12. Where you able to reproduce the expected output?  If not what was different.     
 N/a
 ---
 
