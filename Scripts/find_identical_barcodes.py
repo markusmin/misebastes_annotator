@@ -23,12 +23,12 @@ def find_identical_barcodes(fasta_file):
     # Write the sequences
 
     # Create a file in the same directory where you ran this script
-    with open("clear_2_" + fasta_file, "w+") as output_file:
+    with open("identical_barcodes_" + fasta_file, "w+") as output_file:
         # Just read the hash table and write on the file as a fasta format
         for sequence in sequences:
             output_file.write(">" + sequences[sequence] + "\n" + sequence + "\n")
 
-    print("CLEAN!!!\nPlease check clear_2_" + fasta_file)
+    print("CLEAN!!!\nPlease check identical_barcodes_" + fasta_file)
 
 userParameters = sys.argv[1:]
 
