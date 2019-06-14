@@ -70,3 +70,10 @@ Taberlet, P., Coissac, E., Hajibabaei, M., & Rieseberg, L. H. (2012). Environmen
 ## Acknowledgments
 
 Thank you very much to Emily Curd and Daniel Chavez for helping with the design of this program.
+
+
+DOI: https://doi.org/10.5281/zenodo.3246598
+
+Citation: 
+
+Min, Markus. (2019, June 14). MiSebastes Annotator (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.3246598
