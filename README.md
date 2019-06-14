@@ -25,11 +25,11 @@ The first step can also be used independently to detect which species share a se
 
 If you have a fasta file containing all of your barcodes and an ASV table that you wish to annotate, use the following command to run the complete script:
 
-python3 misebastes_annotator.py ecoPCR_RF_barcodes.fasta Min_sebastes_ASV_sum_by_taxonomy_40.txt
+python3 misebastes_annotator.py ecoPCR_RF_barcodes.fasta Min_sebastes_ASV_sum_by_taxonomy_40.txt > output_file.txt
 
 In this example usage, the fasta file that contains your barcodes is ecoPCR_RF_barcodes.fasta and the anacapa taxonomy file that you wish to annotate is Min_sebastes_ASV_sum_by_taxonomy_40.txt. This will produce two output files:
 1) The trimmed fasta file, called trimmed_ecoPCR_RF_barcodes.fasta
-2) The annotated Anacapa taxonomy file, called Min_sebastes_ASV_sum_by_taxonomy_40_annotated.txt
+2) The annotated Anacapa taxonomy file, called "output_file.txt".
 
 Prior to running this program, you must have the misebastes_annotator.py, your fasta file, and your Anacapa ASV file all in the same directory. The annotated Anacapa ASV file can then be viewed in Excel.
 
