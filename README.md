@@ -1,6 +1,6 @@
 # MiSebastes Annotator
 
-#### Last updated June 4th, 2019
+#### Last updated June 14th, 2019
 * Written by *Markus Min* (markus.min@gmail.com)
 
 ## Introduction
