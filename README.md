@@ -14,9 +14,9 @@ The MiSebastes primer set is a new set of primers developed specifically for roc
 ## Workflow
 
 This program essentially has two parts: 
-(1) Taking a raw fasta file and trimming it down so that each DNA sequence is only listed once, with all species that share the barcode assigned to the sequence barcodes with different species that share a barcode. This fasta file is one of the outputs.
+1. Taking a raw fasta file and trimming it down so that each DNA sequence is only listed once, with all species that share the barcode assigned to the sequence barcodes with different species that share a barcode. This fasta file is one of the outputs.
   - The raw fasta file supplied in the Vignette is an ecoPCR output for the MiSebastes primers, which this first step uses to detect all *Sebastes* spp. that share a barcode and outputs 
-(2) Using the fasta file to append a new column to an Anacapa ASV file, identifying all species that share the particular barcode.
+2. Using the fasta file to append a new column to an Anacapa ASV file, identifying all species that share the particular barcode.
 
 The first step can also be used independently to detect which species share a sequence for your metabarcode.
 
